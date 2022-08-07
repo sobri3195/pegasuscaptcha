@@ -1,0 +1,11 @@
+[package]
+name = "pegasus_captcha"
+version = "0.1.0"
+authors = ["Muhammad Sobri Maulana <pegasus0hacker@gmail.com"]
+edition = "2022"
+
+[dependencies]
+reqwest = { version = "0.11", features = ["blocking", "json"] }
+serde = { version = "1.0.129", features = ["derive"] }
+serde_json = "5"
+pow_sha256 = { git = "https://github.com/sobri3195/pegasuscaptcha", branch = "master" }
